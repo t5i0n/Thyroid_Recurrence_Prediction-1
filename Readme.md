@@ -27,27 +27,6 @@ The project uses the `filtered_thyroid_data.csv` dataset, which contains patient
 - **Staging:** T, N, M, Stage  
 - **Outcome:** Response, **Recurred (Target Variable)**
 
----
-
-##  Installation
-
-### 1. Clone the repository
-
-```bash
-git clone  https://github.com/Bini-fish/Thyroid_Recurrence_Prediction.git
-cd thyroid-recurrence-prediction
-```
-
-### 2. Create a virtual environment
-python -m venv venv
-# On Windows
-venv\Scripts\activate
-# On macOS/Linux
-source venv/bin/activate
-
-### 3. Install dependencies
-pip install -r requirements.txt
-
 ## Usage
 
 Prepare Data: Ensure `filtered_thyroid_data.csv` is located in the data/ directory.
