@@ -55,6 +55,24 @@ Prepare Data: Ensure `filtered_thyroid_data.csv` is located in the data/ directo
 Run the Analysis: Execute the main script:
 - `Thyroid.ipynb`
 
+## Web Interface (Optional)
+
+This project includes a **Streamlit web application** for easy data input and prediction. To run the web interface:
+
+```bash
+# Install Streamlit (if not already installed)
+pip install streamlit
+
+# Run the app
+streamlit run app.py
+```
+
+The web interface provides:
+- User-friendly input form for patient data
+- Model selection (Decision Tree or Random Forest)
+- Real-time prediction with probability breakdown
+- Visual results display
+
 # Results Summary
 
 | Model         | Accuracy                   | Precision (Recurred) | Recall (Recurred) | F1-Score |
