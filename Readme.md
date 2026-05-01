@@ -12,7 +12,7 @@ This project implements machine learning models to predict the recurrence of thy
   - K-Nearest Neighbors (KNN)  
   - Random Forest Classifier
 - **Best Performing Model:**  
-  - **Decision Tree** (Accuracy: ~97.4%, Recall: 95%)  
+  - **Decision Tree** (Accuracy:  95.45% , Recall: 0.92 )  
 - **Key Techniques:** Mode Imputation, Label Encoding, One-Hot Encoding, Feature Scaling (StandardScaler)
 
 ---
@@ -82,4 +82,8 @@ The web interface provides:
 | Random Forest | 93.94%      | 1.00                 | 0.85              | 0.92     | 0.989 |
 
 ## Conclusion
-The Decision Tree was selected as the superior model. Although KNN achieved perfect precision, the Decision Tree provided a significantly higher recall rate (0.95 vs 0.79), meaning it is much better at identifying actual recurrence cases. The Random Forest classifier was also implemented for advanced comparison—see the notebook for its detailed results and performance metrics.
+The Decision Tree was selected as the primary model due to its highest accuracy (95.45%) and strong balance between precision and recall. In particular, it achieved a higher recall compared to both KNN and Random Forest, making it more effective at identifying actual recurrence cases—an essential requirement in medical diagnosis where missing positive cases can be critical.
+
+Although KNN and Random Forest achieved perfect precision (1.00), indicating no false positive predictions, both models exhibited lower recall, meaning they missed a greater number of true recurrence cases. However, Random Forest demonstrated the highest AUC score (0.989), indicating superior overall classification capability and robustness.
+
+Therefore, while the Decision Tree is preferred for its balanced and reliable performance, Random Forest serves as a strong alternative when overall classification strength is prioritized, and KNN remains useful in scenarios where precision is the primary concern.
